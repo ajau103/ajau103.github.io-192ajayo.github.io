@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Reliable Transportation & Logistics Solutions | SwiftRoute</title>
+
+  <meta
+    name="description"
+    content="Professional transportation and logistics solutions for businesses. Request a quote and discuss your shipping and delivery requirements with our team."
+  >
+
+  <style>
+    :root {
+      --navy: #102a43;
+      --navy-dark: #0b1f33;
+      --blue: #1769aa;
+      --blue-dark: #12578d;
+      --orange: #f28c28;
+      --orange-dark: #d97817;
+      --white: #ffffff;
+      --light: #f5f7fa;
+      --lighter: #f9fafb;
+      --text: #5d6875;
+      --dark: #17202a;
+      --border: #e2e7ec;
+      --green: #287a52;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* =========================
+       HEADER
+    ========================== */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.98);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      max-width: 1180px;
+      min-height: 72px;
+      margin: auto;
+      padding: 0 24px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--navy);
+      letter-spacing: -0.7px;
+      white-space: nowrap;
+    }
+
+    .logo span {
+      color: var(--orange);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+
+      color: #44515e;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .nav-links a:hover {
+      color: var(--blue);
+    }
+
+    .phone-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 11px 18px;
+      border-radius: 5px;
+
+      background: var(--orange);
+      color: #151515;
+
+      font-size: 14px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .phone-button:hover {
+      background: var(--orange-dark);
+    }
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      min-height: 670px;
+
+      display: flex;
+      align-items: center;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(8, 29, 48, 0.95) 0%,
+          rgba(8, 29, 48, 0.84) 45%,
+          rgba(8, 29, 48, 0.42) 100%
+        ),
+        url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1900&q=85")
+        center / cover no-repeat;
+    }
+
+    .hero-container {
+      width: 100%;
+      max-width: 1180px;
+      margin: auto;
+      padding: 75px 24px;
+
+      display: grid;
+      grid-template-columns: 1.12fr 0.88fr;
+      align-items: center;
+      gap: 70px;
+    }
+
+    .hero-content {
+      color: var(--white);
+    }
+
+    .eyebrow {
+      display: inline-block;
+
+      margin-bottom: 17px;
+
+      color: #ffc477;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      max-width: 690px;
+
+      font-size: clamp(40px, 5vw, 63px);
+      line-height: 1.06;
+      letter-spacing: -2.4px;
+
+      margin-bottom: 22px;
+    }
+
+    .hero-description {
+      max-width: 650px;
+
+      color: rgba(255,255,255,0.88);
+      font-size: 18px;
+
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .button {
+      min-height: 50px;
+      padding: 0 23px;
+
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 5px;
+
+      font-size: 15px;
+      font-weight: 800;
+
+      transition: 0.2s ease;
+    }
+
+    .button-primary {
+      background: var(--orange);
+      color: #151515;
+    }
+
+    .button-primary:hover {
+      background: var(--orange-dark);
+      transform: translateY(-1px);
+    }
+
+    .button-outline {
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,0.7);
+    }
+
+    .button-outline:hover {
+      background: var(--white);
+      color: var(--navy);
+    }
+
+    /* =========================
+       QUOTE CARD
+    ========================== */
+
+    .quote-card {
+      background: var(--white);
+      border-radius: 9px;
+      padding: 31px;
+
+      box-shadow: 0 25px 70px rgba(0,0,0,0.27);
+    }
+
+    .quote-card h2 {
+      color: var(--navy);
+
+      font-size: 27px;
+      line-height: 1.2;
+
+      margin-bottom: 8px;
+    }
+
+    .quote-intro {
+      color: var(--text);
+      font-size: 14px;
+
+      margin-bottom: 22px;
+    }
+
+    .form-group {
+      margin-bottom: 14px;
+    }
+
+    .form-group label {
+      display: block;
+
+      color: #364452;
+      font-size: 13px;
+      font-weight: 700;
+
+      margin-bottom: 6px;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      height: 46px;
+
+      padding: 0 13px;
+
+      border: 1px solid #d5dce3;
+      border-radius: 5px;
+
+      background: var(--white);
+
+      font-family: inherit;
+      font-size: 14px;
+
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      border-color: var(--blue);
+
+      box-shadow:
+        0 0 0 3px rgba(23,105,170,0.09);
+    }
+
+    .submit-button {
+      width: 100%;
+      height: 49px;
+
+      border: 0;
+      border-radius: 5px;
+
+      background: var(--blue);
+      color: var(--white);
+
+      font-size: 15px;
+      font-weight: 800;
+
+      cursor: pointer;
+    }
+
+    .submit-button:hover {
+      background: var(--blue-dark);
+    }
+
+    .form-disclaimer {
+      margin-top: 11px;
+
+      color: #7d8790;
+      font-size: 10.5px;
+      line-height: 1.5;
+
+      text-align: center;
+    }
+
+    /* =========================
+       TRUST BAR
+    ========================== */
+
+    .trust-bar {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .trust-container {
+      max-width: 1180px;
+      margin: auto;
+      padding: 25px 24px;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      gap: 12px;
+      text-align: left;
+    }
+
+    .trust-icon {
+      width: 39px;
+      height: 39px;
+      flex-shrink: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 50%;
+
+      background: #fff3e5;
+      color: var(--orange);
+
+      font-size: 17px;
+      font-weight: 900;
+    }
+
+    .trust-item strong {
+      display: block;
+
+      color: var(--navy);
+      font-size: 14px;
+    }
+
+    .trust-item span {
+      display: block;
+
+      color: var(--text);
+      font-size: 12px;
+    }
+
+    /* =========================
+       GENERAL SECTIONS
+    ========================== */
+
+    section {
+      padding: 85px 24px;
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: auto;
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin: 0 auto 48px;
+
+      text-align: center;
+    }
+
+    .section-heading .eyebrow {
+      color: var(--orange);
+      margin-bottom: 9px;
+    }
+
+    .section-heading h2 {
+      color: var(--navy);
+
+      font-size: 38px;
+      line-height: 1.2;
+
+      margin-bottom: 13px;
+    }
+
+    .section-heading p {
+      color: var(--text);
+    }
+
+    /* =========================
+       SERVICES
+    ========================== */
+
+    .services {
+      background: var(--light);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 23px;
+    }
+
+    .service-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+
+      padding: 31px;
+
+      transition: 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-3px);
+
+      box-shadow:
+        0 12px 35px rgba(16,42,67,0.08);
+    }
+
+    .service-icon {
+      width: 49px;
+      height: 49px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 7px;
+
+      background: #edf5fb;
+      color: var(--blue);
+
+      font-size: 21px;
+      font-weight: 900;
+
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      color: var(--navy);
+
+      font-size: 20px;
+      margin-bottom: 9px;
+    }
+
+    .service-card p {
+      color: var(--text);
+      font-size: 14px;
+    }
+
+    /* =========================
+       FEATURES
+    ========================== */
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .feature-card {
+      padding: 30px;
+
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    .feature-number {
+      color: var(--orange);
+
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 1px;
+
+      margin-bottom: 12px;
+    }
+
+    .feature-card h3 {
+      color: var(--navy);
+
+      font-size: 20px;
+      margin-bottom: 9px;
+    }
+
+    .feature-card p {
+      color: var(--text);
+      font-size: 14px;
+    }
+
+    /* =========================
+       PROCESS
+    ========================== */
+
+    .process {
+      background: var(--light);
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px;
+    }
+
+    .process-card {
+      text-align: center;
+    }
+
+    .process-number {
+      width: 54px;
+      height: 54px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin: 0 auto 18px;
+
+      border-radius: 50%;
+
+      background: var(--navy);
+      color: var(--white);
+
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .process-card h3 {
+      color: var(--navy);
+
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .process-card p {
+      color: var(--text);
+      font-size: 14px;
+    }
+
+    /* =========================
+       CTA
+    ========================== */
+
+    .cta {
+      background:
+        linear-gradient(
+          120deg,
+          var(--navy),
+          var(--navy-dark)
+        );
+
+      color: var(--white);
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 40px;
+      line-height: 1.2;
+
+      margin-bottom: 13px;
+    }
+
+    .cta p {
+      max-width: 670px;
+
+      margin: 0 auto 27px;
+
+      color: rgba(255,255,255,0.78);
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      background: #081724;
+      color: rgba(255,255,255,0.66);
+
+      padding: 45px 24px 22px;
+    }
+
+    .footer-grid {
+      max-width: 1180px;
+      margin: auto;
+
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+
+      gap: 40px;
+
+      padding-bottom: 32px;
+    }
+
+    footer h3 {
+      color: var(--white);
+
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    footer p,
+    footer a {
+      font-size: 13px;
+    }
+
+    footer a:hover {
+      color: var(--white);
+    }
+
+    .footer-bottom {
+      max-width: 1180px;
+      margin: auto;
+
+      border-top: 1px solid rgba(255,255,255,0.1);
+
+      padding-top: 19px;
+
+      text-align: center;
+      font-size: 11px;
+    }
+
+    /* =========================
+       MOBILE
+    ========================== */
+
+    @media (max-width: 850px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-container {
+        grid-template-columns: 1fr;
+
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        gap: 40px;
+      }
+
+      .hero h1 {
+        font-size: 45px;
+      }
+
+      .service-grid,
+      .feature-grid,
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .trust-container {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+
+      .nav {
+        min-height: 65px;
+        padding: 0 15px;
+      }
+
+      .logo {
+        font-size: 20px;
+      }
+
+      .phone-button {
+        padding: 9px 11px;
+        font-size: 12px;
+      }
+
+      .hero-container {
+        padding: 50px 18px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+        letter-spacing: -1.5px;
+      }
+
+      .hero-description {
+        font-size: 16px;
+      }
+
+      .quote-card {
+        padding: 23px 19px;
+      }
+
+      section {
+        padding: 65px 18px;
+      }
+
+      .section-heading h2,
+      .cta h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header>
+
+    <nav class="nav">
+
+      <a href="#top" class="logo">
+        Swift<span>Route</span>
+      </a>
+
+      <div class="nav-links">
+
+        <a href="#services">
+          Services
+        </a>
+
+        <a href="#why-us">
+          Why Us
+        </a>
+
+        <a href="#process">
+          How It Works
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
+      </div>
+
+      <!-- Replace with your actual US business number -->
+      <a href="tel:+18005550149" class="phone-button">
+        (800) 555-0149
+      </a>
+
+    </nav>
+
+  </header>
+
+
+  <main id="top">
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+      <div class="hero-container">
+
+        <div class="hero-content">
+
+          <span class="eyebrow">
+            Transportation & Logistics
+          </span>
+
+          <h1>
+            Moving Your Business Forward With Reliable Logistics
+          </h1>
+
+          <p class="hero-description">
+            Explore transportation and logistics solutions designed
+            to help businesses coordinate shipments, deliveries,
+            and freight with greater confidence.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#contact" class="button button-primary">
+              Request a Quote
+            </a>
+
+            <a href="tel:+18005550149" class="button button-outline">
+              Call (800) 555-0149
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- =========================
+             QUOTE FORM
+        ========================== -->
+
+        <div class="quote-card" id="contact">
+
+          <h2>
+            Request a Quote
+          </h2>
+
+          <p class="quote-intro">
+            Tell us about your transportation needs and
+            a member of our team can contact you.
+          </p>
+
+          <form id="quoteForm">
+
+            <div class="form-group">
+
+              <label for="name">
+                Full Name
+              </label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your full name"
+                required
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="company">
+                Company Name
+              </label>
+
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="Company name"
+                required
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="email">
+                Email Address
+              </label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@company.com"
+                required
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="phone">
+                Phone Number
+              </label>
+
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="(555) 555-5555"
+                required
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="service">
+                Service Needed
+              </label>
+
+              <select
+                id="service"
+                name="service"
+                required
+              >
+
+                <option value="">
+                  Select a service
+                </option>
+
+                <option value="freight">
+                  Freight Transportation
+                </option>
+
+                <option value="delivery">
+                  Delivery Services
+                </option>
+
+                <option value="logistics">
+                  Logistics Management
+                </option>
+
+                <option value="warehousing">
+                  Warehousing
+                </option>
+
+                <option value="other">
+                  Other
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <button
+              type="submit"
+              class="submit-button"
+            >
+              Request My Quote
+            </button>
+
+
+            <p class="form-disclaimer">
+              By submitting this form, you agree that a representative
+              may contact you regarding your transportation or logistics request.
+            </p>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         TRUST BAR
+    ========================== -->
+
+    <div class="trust-bar">
+
+      <div class="trust-container">
+
+        <div class="trust-item">
+
+          <div class="trust-icon">
+            ✓
+          </div>
+
+          <div>
+            <strong>
+              Professional Support
+            </strong>
+
+            <span>
+              Assistance for your logistics needs
+            </span>
+          </div>
+
+        </div>
+
+
+        <div class="trust-item">
+
+          <div class="trust-icon">
+            ◆
+          </div>
+
+          <div>
+            <strong>
+              Flexible Solutions
+            </strong>
+
+            <span>
+              Options based on your requirements
+            </span>
+          </div>
+
+        </div>
+
+
+        <div class="trust-item">
+
+          <div class="trust-icon">
+            ☎
+          </div>
+
+          <div>
+            <strong>
+              Easy to Get Started
+            </strong>
+
+            <span>
+              Request information today
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         SERVICES
+    ========================== -->
+
+    <section class="services" id="services">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            Our Services
+          </span>
+
+          <h2>
+            Transportation & Logistics Solutions
+          </h2>
+
+          <p>
+            Explore services that can help your business
+            coordinate transportation and logistics requirements.
+          </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+          <div class="service-card">
+
+            <div class="service-icon">
+              ↗
+            </div>
+
+            <h3>
+              Freight Transportation
+            </h3>
+
+            <p>
+              Transportation solutions for businesses
+              moving goods between locations.
+            </p>
+
+          </div>
+
+
+          <div class="service-card">
+
+            <div class="service-icon">
+              ▣
+            </div>
+
+            <h3>
+              Delivery Services
+            </h3>
+
+            <p>
+              Flexible delivery options for shipments
+              that need to reach their destination.
+            </p>
+
+          </div>
+
+
+          <div class="service-card">
+
+            <div class="service-icon">
+              ⇄
+            </div>
+
+            <h3>
+              Logistics Coordination
+            </h3>
+
+            <p>
+              Support for coordinating transportation,
+              scheduling, and logistics requirements.
+            </p>
+
+          </div>
+
+
+          <div class="service-card">
+
+            <div class="service-icon">
+              □
+            </div>
+
+            <h3>
+              Warehousing
+            </h3>
+
+            <p>
+              Storage and logistics support for businesses
+              managing inventory and shipments.
+            </p>
+
+          </div>
+
+
+          <div class="service-card">
+
+            <div class="service-icon">
+              →
+            </div>
+
+            <h3>
+              Route Planning
+            </h3>
+
+            <p>
+              Practical transportation planning designed
+              around your shipment requirements.
+            </p>
+
+          </div>
+
+
+          <div class="service-card">
+
+            <div class="service-icon">
+              +
+            </div>
+
+            <h3>
+              Customized Solutions
+            </h3>
+
+            <p>
+              Discuss your requirements with our team
+              to explore an appropriate solution.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         WHY US
+    ========================== -->
+
+    <section id="why-us">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            Why Choose Us
+          </span>
+
+          <h2>
+            A Straightforward Approach to Logistics
+          </h2>
+
+          <p>
+            We focus on clear communication, practical solutions,
+            and helping businesses manage their transportation needs.
+          </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+          <div class="feature-card">
+
+            <div class="feature-number">
+              01 — COMMUNICATION
+            </div>
+
+            <h3>
+              Clear Communication
+            </h3>
+
+            <p>
+              Get straightforward information about your
+              transportation requirements and next steps.
+            </p>
+
+          </div>
+
+
+          <div class="feature-card">
+
+            <div class="feature-number">
+              02 — FLEXIBILITY
+            </div>
+
+            <h3>
+              Solutions Built Around You
+            </h3>
+
+            <p>
+              Discuss your shipment requirements and explore
+              options that fit your business needs.
+            </p>
+
+          </div>
+
+
+          <div class="feature-card">
+
+            <div class="feature-number">
+              03 — SUPPORT
+            </div>
+
+            <h3>
+              Dedicated Assistance
+            </h3>
+
+            <p>
+              Our team is available to help you understand
+              your options and coordinate your next steps.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROCESS
+    ========================== -->
+
+    <section class="process" id="process">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            Simple Process
+          </span>
+
+          <h2>
+            Getting Started Is Easy
+          </h2>
+
+          <p>
+            Share your requirements and let our team help
+            you determine the next step.
+          </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+          <div class="process-card">
+
+            <div class="process-number">
+              1
+            </div>
+
+            <h3>
+              Tell Us About Your Shipment
+            </h3>
+
+            <p>
+              Complete the short form with your basic
+              transportation or logistics requirements.
+            </p>
+
+          </div>
+
+
+          <div class="process-card">
+
+            <div class="process-number">
+              2
+            </div>
+
+            <h3>
+              Discuss Your Requirements
+            </h3>
+
+            <p>
+              A member of our team can contact you to
+              discuss your specific needs.
+            </p>
+
+          </div>
+
+
+          <div class="process-card">
+
+            <div class="process-number">
+              3
+            </div>
+
+            <h3>
+              Review Your Options
+            </h3>
+
+            <p>
+              Explore the available transportation and
+              logistics options for your business.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         FINAL CTA
+    ========================== -->
+
+    <section class="cta">
+
+      <div class="container">
+
+        <h2>
+          Let's Move Your Business Forward
+        </h2>
+
+        <p>
+          Tell us what you need and take the first step toward
+          finding a transportation or logistics solution.
+        </p>
+
+        <a href="#contact" class="button button-primary">
+          Request a Quote
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <div class="footer-grid">
+
+      <div>
+
+        <h3>
+          SwiftRoute
+        </h3>
+
+        <p>
+          Transportation and logistics solutions designed
+          to help businesses coordinate their shipping,
+          delivery, and freight requirements.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Quick Links
+        </h3>
+
+        <p>
+          <a href="#services">
+            Services
+          </a>
+        </p>
+
+        <p>
+          <a href="#why-us">
+            Why Us
+          </a>
+        </p>
+
+        <p>
+          <a href="#process">
+            How It Works
+          </a>
+        </p>
+
+        <p>
+          <a href="#contact">
+            Request a Quote
+          </a>
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Contact
+        </h3>
+
+        <!-- Replace with your actual US business number -->
+        <p>
+          <a href="tel:+18005550149">
+            (800) 555-0149
+          </a>
+        </p>
+
+        <p>
+          United States
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      © 2026 SwiftRoute. All rights reserved.
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================
+       FORM SCRIPT
+  ========================== -->
+
+  <script>
+
+    /*
+      Front-end demo behavior.
+
+      IMPORTANT:
+      Connect this form to your actual CRM, backend,
+      or approved form-processing service before
+      sending Google Ads traffic.
+    */
+
+    const quoteForm = document.getElementById("quoteForm");
+
+    quoteForm.addEventListener("submit", function(event) {
+
+      event.preventDefault();
+
+      const submitButton =
+        quoteForm.querySelector(".submit-button");
+
+      submitButton.textContent = "Request Received";
+      submitButton.disabled = true;
+
+      setTimeout(function() {
+
+        alert(
+          "Thank you for your request. Please connect this form to your lead-processing system before launching your campaign."
+        );
+
+        quoteForm.reset();
+
+        submitButton.textContent = "Request My Quote";
+        submitButton.disabled = false;
+
+      }, 500);
+
+    });
+
+  </script>
+
+</body>
+</html>
